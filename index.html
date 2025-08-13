@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Pandey - Elite Deal Closer & Business Connector</title>
+    <meta
+      name="description"
+      content="High-level deal closer and business connector with 20,000+ strategic partnerships. Expert in corporate tie-ups, brand partnerships, and multi-million dollar negotiations."
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* Color Palette */
+        --primary-dark: #1a1a1a;
+        --primary-charcoal: #2c2c2c;
+        --secondary-charcoal: #404040;
+        --accent-gold: #d4af37;
+        --accent-gold-light: #f4e8a7;
+        --pure-white: #ffffff;
+        --off-white: #f8f9fa;
+        --light-gray: #e5e5e5;
+        --medium-gray: #999999;
+        --text-dark: #333333;
+
+        /* Typography */
+        --font-primary: "Inter", sans-serif;
+        --font-secondary: "Playfair Display", serif;
+
+        /* Spacing */
+        --section-padding: 5rem 0;
+        --container-padding: 0 1.5rem;
+        --border-radius: 0.75rem;
+        --border-radius-large: 1.5rem;
+
+        /* Shadows */
+        --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
+        --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.1);
+        --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+        /* Transitions */
+        --transition-fast: 0.2s ease;
+        --transition-medium: 0.3s ease;
+        --transition-slow: 0.5s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        line-height: 1.6;
+        color: var(--text-dark);
+        overflow-x: hidden;
+        cursor: none;
+      }
+
+      /* Custom Cursor */
+      .cursor {
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--accent-gold);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        mix-blend-mode: difference;
+        transition: all var(--transition-fast);
+      }
+
+      .cursor-follower {
+        width: 8px;
+        height: 8px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9998;
+        transition: all var(--transition-medium);
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--container-padding);
+      }
+
+      /* Navigation */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(26, 26, 26, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: all var(--transition-medium);
+      }
+
+      .navbar {
+        background: rgba(26, 26, 26, 0.4);
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        transition: background 0.3s ease;
+      }
+
+      .navbar.scrolled {
+        background: rgba(26, 26, 26, 0.7); /* Slightly darker when scrolling */
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: var(--font-secondary);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--pure-white);
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: var(--pure-white);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color var(--transition-fast);
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-gold);
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--pure-white);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--pure-white);
+        overflow: hidden;
+      }
+
+      /* .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary-charcoal) 100%
+        );
+        z-index: -2;
+      } */
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            135deg,
+            var(--primary-dark) 0%,
+            var(--primary-charcoal) 100%
+          ),
+          url("https://images.pexels.com/photos/277593/pexels-photo-277593.jpeg")
+            center/cover no-repeat;
+        background-blend-mode: overlay;
+        z-index: -2;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        z-index: 1;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .hero-title {
+        font-family: var(--font-secondary);
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .hero-subtitle {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        font-weight: 300;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: var(--border-radius);
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all var(--transition-medium);
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        background: var(--accent-gold);
+        color: var(--primary-dark);
+      }
+
+      .btn-primary:hover {
+        background: var(--accent-gold-light);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--pure-white);
+        border: 2px solid var(--pure-white);
+      }
+
+      .btn-outline:hover {
+        background: var(--pure-white);
+        color: var(--primary-dark);
+        transform: translateY(-2px);
+      }
+
+      /* Section Styles */
+      .section {
+        padding: var(--section-padding);
+      }
+
+      .section-title {
+        font-family: var(--font-secondary);
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: var(--primary-dark);
+      }
+
+      .section-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--medium-gray);
+        margin-bottom: 3rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* About Section */
+      .about {
+        background: var(--off-white);
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+
+      .about-image {
+        position: relative;
+        border-radius: var(--border-radius-large);
+        overflow: hidden;
+        box-shadow: var(--shadow-heavy);
+        background-color: #e11111;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        transition: transform var(--transition-slow);
+      }
+
+      .about-image:hover img {
+        transform: scale(1.05);
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--text-dark);
+      }
+
+      .about-text p {
+        margin-bottom: 1.5rem;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .value-card {
+        background: var(--pure-white);
+        padding: 2rem;
+        border-radius: var(--border-radius);
+        text-align: center;
+        box-shadow: var(--shadow-light);
+        transition: all var(--transition-medium);
+      }
+
+      .value-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      .value-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+        color: var(--pure-white);
+      }
+
+      .value-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--primary-dark);
+      }
+
+      .value-desc {
+        color: var(--medium-gray);
+        font-size: 0.95rem;
+      }
+
+      /* Services Section */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .service-card {
+        background: var(--pure-white);
+        border-radius: var(--border-radius-large);
+        overflow: hidden;
+        box-shadow: var(--shadow-light);
+        transition: all var(--transition-medium);
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-heavy);
+      }
+
+      .service-image {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform var(--transition-slow);
+      }
+
+      .service-card:hover .service-image img {
+        transform: scale(1.1);
+      }
+
+      .service-content {
+        padding: 2rem;
+      }
+
+      .service-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--primary-dark);
+      }
+
+      .service-desc {
+        color: var(--medium-gray);
+        line-height: 1.6;
+      }
+
+      /* Why Choose Section */
+      .why-choose {
+        background: var(--primary-dark);
+        color: var(--pure-white);
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .feature-item {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.08); /* Transparent for glass */
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border-radius: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .feature-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 2rem;
+        color: var(--primary-dark);
+      }
+
+      .feature-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .feature-desc {
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      /* Clients Section */
+      .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+      }
+
+      .client-item {
+        background: var(--pure-white);
+        padding: 2rem;
+        border-radius: var(--border-radius);
+        text-align: center;
+        box-shadow: var(--shadow-light);
+        transition: all var(--transition-medium);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .client-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      .client-logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+        background: var(--light-gray);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: var(--primary-dark);
+      }
+
+      .client-name {
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      .client-note {
+        font-size: 0.9rem;
+        color: var(--medium-gray);
+        margin-top: 0.5rem;
+      }
+
+      /* Testimonials Section */
+      .testimonials {
+        background: var(--off-white);
+      }
+
+      .testimonial-slider {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .testimonial-item {
+        background: var(--pure-white);
+        padding: 3rem;
+        border-radius: var(--border-radius-large);
+        text-align: center;
+        box-shadow: var(--shadow-medium);
+        margin-bottom: 2rem;
+      }
+
+      .testimonial-item {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.6s ease;
+        pointer-events: none;
+      }
+
+      .testimonial-item.active {
+        opacity: 1;
+        position: relative;
+        pointer-events: auto;
+      }
+
+      .testimonial-text {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+        color: var(--text-dark);
+        line-height: 1.7;
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE/Edge */
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .author-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--accent-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--pure-white);
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+
+      .author-info h4 {
+        font-weight: 600;
+        color: var(--primary-dark);
+      }
+
+      .author-info p {
+        color: var(--medium-gray);
+        font-size: 0.9rem;
+      }
+
+      /* Case Studies Section */
+      .case-studies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+      }
+
+      .case-study-card {
+        background: var(--pure-white);
+        border-radius: var(--border-radius-large);
+        overflow: hidden;
+        box-shadow: var(--shadow-light);
+        transition: all var(--transition-medium);
+      }
+
+      .case-study-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-heavy);
+      }
+
+      .case-study-image {
+        height: 200px;
+        background: linear-gradient(
+          135deg,
+          var(--accent-gold) 0%,
+          var(--accent-gold-light) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: var(--pure-white);
+      }
+
+      .case-study-content {
+        padding: 2rem;
+      }
+
+      .case-study-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--primary-dark);
+      }
+
+      .case-study-desc {
+        color: var(--medium-gray);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .read-more,
+      .c-links {
+        color: var(--accent-gold);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      /* Blog Section */
+      .blog {
+        background: var(--off-white);
+      }
+
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .blog-card {
+        background: var(--pure-white);
+        border-radius: var(--border-radius-large);
+        overflow: hidden;
+        box-shadow: var(--shadow-light);
+        transition: all var(--transition-medium);
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      .blog-image {
+        height: 180px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--secondary-charcoal) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--pure-white);
+        font-size: 2rem;
+      }
+
+      .blog-content {
+        padding: 1.5rem;
+      }
+
+      .blog-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--primary-dark);
+      }
+
+      .blog-excerpt {
+        color: var(--medium-gray);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      /* Contact Section */
+      .contact {
+        background: var(--primary-dark);
+        color: var(--pure-white);
+      }
+
+      .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+
+      .contact-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        color: var(--accent-gold);
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-dark);
+      }
+
+      .contact-form {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: var(--border-radius-large);
+        backdrop-filter: blur(10px);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: var(--border-radius);
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--pure-white);
+        font-family: var(--font-primary);
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .form-group textarea {
+        height: 120px;
+        resize: vertical;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--primary-charcoal);
+        color: var(--pure-white);
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .social-link {
+        width: 40px;
+        height: 40px;
+        background: var(--accent-gold);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-dark);
+        text-decoration: none;
+        transition: all var(--transition-medium);
+      }
+
+      .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-medium);
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all var(--transition-slow);
+      }
+
+      .fade-in-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        body {
+          cursor: auto;
+        }
+
+        .cursor,
+        .cursor-follower {
+          display: none;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .hero-stats {
+          gap: 2rem;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .about-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .contact-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .values-grid,
+        .services-grid,
+        .features-grid,
+        .clients-grid,
+        .case-studies-grid,
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 3rem 0;
+        }
+
+        .container {
+          padding: 0 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-stats {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .testimonial-item {
+          padding: 2rem;
+        }
+
+        .testimonial-author {
+          flex-direction: column;
+        }
+
+        .contact-form {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="#home" class="logo">Shivam</a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Elite Deal Closer & Business Architect</h1>
+          <p class="hero-subtitle">
+            Transforming ambitious visions into multi-million dollar realities
+            through strategic partnerships and unparalleled network leverage
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">20,000+</span>
+              <span class="stat-label">Strategic Partnerships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">₹500M+</span>
+              <span class="stat-label">Deals Closed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Success Rate</span>
+            </div>
+          </div>
+
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-handshake"></i>
+              Work With Me
+            </a>
+            <a href="#case-studies" class="btn btn-outline">
+              <i class="fas fa-chart-line"></i>
+              View Case Studies
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">The Architect of Impossible Deals</h2>
+        <p class="section-subtitle">
+          Where vision meets execution, and relationships become revenue streams
+        </p>
+
+        <div class="about-content fade-in-up">
+          <div class="about-image">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMUExQTFBIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9IiNENEFGMzciLz4KPHJlY3QgeD0iMTQwIiB5PSIyNDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRDRBRjM3Ii8+CjxyZWN0IHg9IjEwMCIgeT0iMzIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRDRBRjM3Ii8+Cjwvc3ZnPgo="
+              alt="Shivam Pandey - Professional Portrait"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              With over a decade of experience in high-stakes negotiations and
+              strategic business development, I've built an empire of
+              connections that spans industries, continents, and corporate
+              hierarchies. My approach isn't just about closing deals—it's about
+              architecting ecosystems where every stakeholder wins
+              exponentially.
+            </p>
+
+            <p>
+              From Fortune 500 boardrooms to celebrity management suites, I've
+              orchestrated partnerships that have redefined industry standards
+              and created unprecedented value streams. My 20,000+ network isn't
+              just a number—it's a carefully curated ecosystem of
+              decision-makers, influencers, and industry titans who trust my
+              judgment and execution.
+            </p>
+
+            <p>
+              Every deal I touch becomes a masterpiece of strategic thinking,
+              relationship leverage, and flawless execution. When others see
+              obstacles, I see opportunities. When others see competition, I see
+              collaboration potential.
+            </p>
+          </div>
+        </div>
+
+        <div class="values-grid fade-in-up">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="value-title">Unshakeable Trust</h3>
+            <p class="value-desc">
+              Built on transparency, integrity, and consistent delivery that
+              exceeds expectations every single time.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="value-title">Elite Network</h3>
+            <p class="value-desc">
+              Access to 20,000+ high-level contacts across industries, ensuring
+              the right connections at the right time.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="value-title">Flawless Execution</h3>
+            <p class="value-desc">
+              From concept to completion, every project is delivered with
+              precision, speed, and excellence.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="value-title">Proven Results</h3>
+            <p class="value-desc">
+              98% success rate with deals worth ₹500M+ speaks to the power of
+              strategic relationship building.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="value-title">Absolute Confidentiality</h3>
+            <p class="value-desc">
+              Complete discretion and privacy protection for all clients and
+              sensitive business matters.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3 class="value-title">Global Reach</h3>
+            <p class="value-desc">
+              Multi-industry expertise spanning technology, entertainment, real
+              estate, and corporate sectors worldwide.
+            </p>
+          </div>
+          <!-- New Items -->
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="value-title">Innovative Strategies</h3>
+            <p class="value-desc">
+              Tailor-made solutions that combine creativity with data-driven
+              insights for maximum impact.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3 class="value-title">Client-Centric Approach</h3>
+            <p class="value-desc">
+              Every decision and action is guided by the client's goals,
+              ensuring mutual growth and long-term success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Premium Services Portfolio</h2>
+        <p class="section-subtitle">
+          Comprehensive solutions for the most demanding business challenges
+        </p>
+
+        <div class="services-grid fade-in-up">
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMzAiIGZpbGw9IiNENEFGMzciLz4KPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTAwIiByPSIzMCIgZmlsbD0iI0Q0QUYzNyIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxMDAiIHI9IjMwIiBmaWxsPSIjRDRBRjM3Ii8+CjxsaW5lIHgxPSIxMzAiIHkxPSIxMDAiIHgyPSIxNzAiIHkyPSIxMDAiIHN0cm9rZT0iI0Q0QUYzNyIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxsaW5lIHgxPSIyMzAiIHkxPSIxMDAiIHgyPSIyNzAiIHkyPSIxMDAiIHN0cm9rZT0iI0Q0QUYzNyIgc3Ryb2tlLXdpZHRoPSI0Ii8+Cjwvc3ZnPgo="
+                alt="Corporate Tie-Ups"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">
+                Corporate Tie-Ups & Strategic Alliances
+              </h3>
+              <p class="service-desc">
+                Forge powerful partnerships between Fortune 500 companies and
+                emerging market leaders. Create synergistic relationships that
+                multiply revenue streams and market reach exponentially.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHJ4PSIxMCIgZmlsbD0iI0Q0QUYzNyIvPgo8cmVjdCB4PSIyNTAiIHk9IjUwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjEwIiBmaWxsPSIjRDRBRjM3Ii8+CjxwYXRoIGQ9Ik0xNTAgMTAwTDI1MCAxMDAiIHN0cm9rZT0iI0Q0QUYzNyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtZGFzaGFycmF5PSI4IDQiLz4KPC9zdmc+Cg=="
+                alt="Brand Partnerships"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Premium Brand Partnerships</h3>
+              <p class="service-desc">
+                Architect high-value brand collaborations that elevate market
+                positioning and create mutually beneficial revenue opportunities
+                across diverse industry verticals.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxzdGFyIGN4PSIyMDAiIGN5PSIxMDAiIHI9IjQwIiBmaWxsPSIjRDRBRjM3Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMjAiIGZpbGw9IiNENEFGMzciLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iMTAwIiByPSIyMCIgZmlsbD0iI0Q0QUYzNyIvPgo8L3N2Zz4K"
+                alt="Celebrity Collaborations"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">
+                Influencer & Celebrity Collaborations
+              </h3>
+              <p class="service-desc">
+                Connect brands with A-list celebrities and top-tier influencers
+                for authentic, high-impact campaigns that drive massive
+                engagement and brand elevation.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxwYXRoIGQ9Ik01MCA1MEwyMDAgMTAwTDM1MCA1MCIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utd2lkdGg9IjgiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMTUiIGZpbGw9IiNENEFGMzciLz4KPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTAwIiByPSIyMCIgZmlsbD0iI0Q0QUYzNyIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSI1MCIgcj0iMTUiIGZpbGw9IiNENEFGMzciLz4KPC9zdmc+Cg=="
+                alt="Sales Negotiations"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Elite Sales Negotiations</h3>
+              <p class="service-desc">
+                Master-level negotiation services for high-stakes deals,
+                ensuring optimal outcomes through psychological insight,
+                strategic positioning, and relationship leverage.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwMCIgcj0iNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Q0QUYzNyIgc3Ryb2tlLXdpZHRoPSI2Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwMCIgcj0iMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Q0QUYzNyIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEwMCIgcj0iMTAiIGZpbGw9IiNENEFGMzciLz4KPC9zdmc+Cg=="
+                alt="Market Expansion"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Market Expansion Consulting</h3>
+              <p class="service-desc">
+                Strategic market entry and expansion guidance, leveraging deep
+                industry insights and established networks to accelerate growth
+                and minimize risk.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-image">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDQwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMUExQTFBIDAlLCAjMkMyQzJDIDEwMCUpIi8+CjxyZWN0IHg9IjEwMCIgeT0iNzAiIHdpZHRoPSIyMDAiIGhlaWdodD0iNjAiIHJ4PSIzMCIgZmlsbD0iI0Q0QUYzNyIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIyMCIgZmlsbD0iI0Q0QUYzNyIvPgo8Y2lyY2xlIGN4PSIzNTAiIGN5PSI1MCIgcj0iMjAiIGZpbGw9IiNENEFGMzciLz4KPGNpcmNsZSBjeD0iNTAiIGN5PSIxNTAiIHI9IjIwIiBmaWxsPSIjRDRBRjM3Ii8+CjxjaXJjbGUgY3g9IjM1MCIgY3k9IjE1MCIgcj0iMjAiIGZpbGw9IiNENEFGMzciLz4KPC9zdmc+Cg=="
+                alt="Deal Mediation"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Deal Mediation & Closing</h3>
+              <p class="service-desc">
+                Expert mediation services for complex multi-party deals,
+                ensuring all stakeholders achieve optimal outcomes through
+                strategic compromise and value creation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section id="why-choose" class="section why-choose">
+      <div class="container">
+        <h2 class="section-title">Why Elite Leaders Choose Me</h2>
+        <p class="section-subtitle">
+          The competitive advantages that set me apart in the world of
+          high-stakes business
+        </p>
+
+        <div class="features-grid fade-in-up">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="feature-title">Massive Network</h3>
+            <p class="feature-desc">
+              20,000+ high-level contacts across industries, continents, and
+              corporate hierarchies, providing unmatched access to
+              decision-makers and opportunities.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="feature-title">Proven Track Record</h3>
+            <p class="feature-desc">
+              98% success rate with deals worth ₹500M+ demonstrates consistent
+              ability to deliver exceptional results in the most challenging
+              scenarios.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-user-secret"></i>
+            </div>
+            <h3 class="feature-title">Absolute Confidentiality</h3>
+            <p class="feature-desc">
+              Military-grade discretion and privacy protection for all clients,
+              ensuring sensitive business matters remain completely secure and
+              confidential.
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-industry"></i>
+            </div>
+            <h3 class="feature-title">Multi-Industry Expertise</h3>
+            <p class="feature-desc">
+              Deep knowledge spanning technology, entertainment, real estate,
+              healthcare, and corporate sectors, enabling cross-industry
+              innovation and opportunity identification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients & Collaborations Section -->
+    <section id="clients" class="section clients">
+      <div class="container">
+        <h2 class="section-title">Elite Clients & Collaborations</h2>
+        <p class="section-subtitle">
+          Trusted by industry leaders, celebrities, and Fortune 500 companies
+          worldwide
+        </p>
+
+        <div class="clients-grid fade-in-up">
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <h4 class="client-name">Tech Unicorn Inc.</h4>
+            <p class="client-note">$50M Series B Partnership</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="client-name">A-List Celebrity</h4>
+            <p class="client-note">Brand Ambassador Deal</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-crown"></i>
+            </div>
+            <h4 class="client-name">Luxury Brand Group</h4>
+            <p class="client-note">Market Expansion Strategy</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-film"></i>
+            </div>
+            <h4 class="client-name">Entertainment Studio</h4>
+            <p class="client-note">Celebrity Casting Network</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h4 class="client-name">Startup Accelerator</h4>
+            <p class="client-note">Investor Relations</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h4 class="client-name">Global Corp</h4>
+            <p class="client-note">International Expansion</p>
+          </div>
+          <!-- New Items -->
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <h4 class="client-name">Music Production House</h4>
+            <p class="client-note">World Tour Sponsorship</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h4 class="client-name">EcoTech Solutions</h4>
+            <p class="client-note">Sustainable Innovation Partnership</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h4 class="client-name">Fashion House</h4>
+            <p class="client-note">Runway Collaboration</p>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h4 class="client-name">Gaming Studio</h4>
+            <p class="client-note">E-Sports Partnership</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">What Elite Leaders Say</h2>
+        <p class="section-subtitle">
+          Testimonials from the industry's most successful professionals
+        </p>
+
+        <div class="testimonial-slider fade-in-up">
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "Shivam doesn't just close deals—he architects business
+              relationships that transform entire industries. His network is
+              unparalleled, and his execution is flawless. The ₹120 crore
+              partnership he secured for us exceeded every expectation."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">RS</div>
+              <div class="author-info">
+                <h4>Rajesh Sharma</h4>
+                <p>CEO, TechnovationX</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "In a world full of networkers, Shivam is a relationship
+              architect. He connected us with the perfect celebrity endorsement
+              that transformed our brand overnight. The deal generated 300% ROI
+              in the first quarter alone."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">PK</div>
+              <div class="author-info">
+                <h4>Priya Kapoor</h4>
+                <p>CMO, Luxury Lifestyle Brands</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "Shivam's ability to navigate complex multi-party negotiations
+              while maintaining trust and delivering value to everyone involved
+              is extraordinary. He turned our impossible deal into our most
+              successful partnership."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">AM</div>
+              <div class="author-info">
+                <h4>Arjun Malhotra</h4>
+                <p>Chairman, Global Ventures Ltd</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section case-studies">
+      <div class="container">
+        <h2 class="section-title">Success Stories That Define Excellence</h2>
+        <p class="section-subtitle">
+          Real results, real impact, real transformation
+        </p>
+
+        <div class="case-studies-grid fade-in-up">
+          <div class="case-study-card">
+            <div class="case-study-image">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="case-study-content">
+              <h3 class="case-study-title">The ₹200 Crore Tech Merger</h3>
+              <p class="case-study-desc">
+                Orchestrated the largest tech acquisition in Southeast Asia by
+                connecting two industry giants, creating unprecedented market
+                synergies and shareholder value.
+              </p>
+              <a href="#" class="read-more">
+                Read Full Story <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="case-study-card">
+            <div class="case-study-image">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="case-study-content">
+              <h3 class="case-study-title">Celebrity Brand Empire</h3>
+              <p class="case-study-desc">
+                Built a multi-brand partnership network for a Bollywood
+                A-lister, generating ₹85 crores in brand deals and establishing
+                a sustainable revenue ecosystem.
+              </p>
+              <a href="#" class="read-more">
+                Read Full Story <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="case-study-card">
+            <div class="case-study-image">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="case-study-content">
+              <h3 class="case-study-title">Global Market Breakthrough</h3>
+              <p class="case-study-desc">
+                Facilitated a startup's expansion into 12 international markets
+                through strategic partnerships, achieving 400% revenue growth in
+                18 months.
+              </p>
+              <a href="#" class="read-more">
+                Read Full Story <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+      <div class="container">
+        <h2 class="section-title">
+          Strategic Insights & Industry Intelligence
+        </h2>
+        <p class="section-subtitle">
+          Cutting-edge strategies and market insights from the frontlines of
+          elite deal-making
+        </p>
+
+        <div class="blog-grid fade-in-up">
+          <div class="blog-card">
+            <div class="blog-image">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Psychology of High-Stakes Negotiations
+              </h3>
+              <p class="blog-excerpt">
+                Understanding the mental frameworks and psychological triggers
+                that drive successful deal-making in high-pressure environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-image">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                Building Networks That Generate Revenue
+              </h3>
+              <p class="blog-excerpt">
+                The systematic approach to relationship building that transforms
+                connections into consistent revenue streams and business
+                opportunities.
+              </p>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-image">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Market Trends Shaping 2024-2025</h3>
+              <p class="blog-excerpt">
+                Strategic insights into emerging market opportunities and
+                industry shifts that will define the next wave of business
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Let's Architect Your Next Big Win</h2>
+        <p class="section-subtitle">
+          Ready to transform your vision into a multi-million dollar reality?
+        </p>
+
+        <div class="contact-content fade-in-up">
+          <div class="contact-info">
+            <h3>Connect With Excellence</h3>
+            <div class="contact-info">
+              <!-- Availability -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div>
+                  <p><strong>Availability:</strong></p>
+                  <p>24/7 for Elite Clients</p>
+                </div>
+              </div>
+
+              <!-- Direct Line -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <p><strong>Direct Line:</strong></p>
+                  <p>+91 98765 43210</p>
+                </div>
+              </div>
+
+              <!-- Executive Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <p><strong>Executive Email:</strong></p>
+                  <p>shivam@elitedeals.com</p>
+                </div>
+              </div>
+
+              <!-- Global Headquarters -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <p><strong>Global Headquarters:</strong></p>
+                  <p>Mumbai, Maharashtra, India</p>
+                </div>
+              </div>
+
+              <!-- Optional: LinkedIn / Social -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div>
+                  <p><strong>LinkedIn:</strong></p>
+                  <p>
+                    <a
+                      class="c-links"
+                      href="https://linkedin.com/in/shivampandey"
+                      target="_blank"
+                      >linkedin.com/in/shivampandey</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your.email@company.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                />
+              </div>
+              <div class="form-group">
+                <label for="company">Company/Organization</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Your company name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="project">Project Brief *</label>
+                <textarea
+                  id="project"
+                  name="project"
+                  required
+                  placeholder="Describe your project, deal objectives, timeline, and expected outcomes..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                Schedule Elite Consultation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p>
+          &copy; 2024 Shivam Pandey. All rights reserved. Elite Deal Closing &
+          Business Architecture.
+        </p>
+        <p>
+          Transforming visions into multi-million dollar realities through
+          strategic partnerships and unparalleled network leverage.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Custom Cursor
+      const cursor = document.querySelector(".cursor");
+      const cursorFollower = document.querySelector(".cursor-follower");
+
+      let mouseX = 0;
+      let mouseY = 0;
+      let cursorX = 0;
+      let cursorY = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+      });
+
+      function animateCursorFollower() {
+        cursorX += (mouseX - cursorX) * 0.1;
+        cursorY += (mouseY - cursorY) * 0.1;
+
+        cursorFollower.style.left = cursorX + "px";
+        cursorFollower.style.top = cursorY + "px";
+
+        requestAnimationFrame(animateCursorFollower);
+      }
+      animateCursorFollower();
+
+      // Hover effects for cursor
+      const hoverElements = document.querySelectorAll(
+        "a, button, .service-card, .value-card, .client-item"
+      );
+
+      hoverElements.forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+          cursor.style.transform = "scale(1.5)";
+          cursorFollower.style.transform = "scale(2)";
+        });
+
+        element.addEventListener("mouseleave", () => {
+          cursor.style.transform = "scale(1)";
+          cursorFollower.style.transform = "scale(1)";
+        });
+      });
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Navbar background change on scroll
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Fade in animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in-up").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Testimonial slider functionality
+      let currentTestimonial = 0;
+      const testimonials = document.querySelectorAll(".testimonial-item");
+
+      function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+          testimonial.classList.toggle("active", i === index);
+        });
+      }
+
+      function nextTestimonial() {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+      }
+
+      // Initialize testimonials
+      if (testimonials.length > 0) {
+        showTestimonial(0);
+        setInterval(nextTestimonial, 6000); // Change every 6 seconds
+      }
+
+      // Contact form handling
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = new FormData(this);
+          const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            phone: formData.get("phone"),
+            company: formData.get("company"),
+            project: formData.get("project"),
+          };
+
+          // Show success message (in a real implementation, you'd send this to a server)
+          alert(
+            "Thank you for your interest! I will personally review your project brief and contact you within 24 hours to discuss how we can architect your success together."
+          );
+
+          // Reset form
+          this.reset();
+        });
+
+      // Add parallax effect to hero section
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector(".hero");
+        const rate = scrolled * -0.5;
+
+        if (hero) {
+          hero.style.transform = `translateY(${rate}px)`;
+        }
+      });
+
+      // Add loading animation
+      window.addEventListener("load", () => {
+        document.body.style.opacity = "0";
+        document.body.style.transition = "opacity 0.5s ease-in-out";
+
+        setTimeout(() => {
+          document.body.style.opacity = "1";
+        }, 100);
+      });
+
+      // Mobile menu functionality
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-active");
+      });
+
+      // Service card hover effects
+      const serviceCards = document.querySelectorAll(".service-card");
+      serviceCards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.transform = "translateY(-10px) scale(1.02)";
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "translateY(0) scale(1)";
+        });
+      });
+
+      // Value card stagger animation
+      const valueCards = document.querySelectorAll(".value-card");
+      valueCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+      });
+
+      // Counter animation for stats
+      function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current).toLocaleString();
+        }, 20);
+      }
+
+      // Trigger counter animation when stats come into view
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll(".stat-number");
+            statNumbers.forEach((stat) => {
+              const text = stat.textContent;
+              const number = parseInt(text.replace(/[^\d]/g, ""));
+              if (number) {
+                stat.textContent = "0";
+                animateCounter(stat, number);
+                stat.innerHTML =
+                  stat.textContent +
+                  text.replace(/[\d,]/g, "").replace(/\d/g, "");
+              }
+            });
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      });
+
+      const heroStats = document.querySelector(".hero-stats");
+      if (heroStats) {
+        statsObserver.observe(heroStats);
+      }
+
+      const navbar = document.querySelector(".navbar");
+      const navbarHeight = navbar ? navbar.offsetHeight : 60; // fallback to 60px
+
+      const mobileMenuCSS = `
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: ${navbarHeight}px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - ${navbarHeight}px);
+                background: rgba(26, 26, 26, 0.98);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                z-index: 9999;
+                display: flex;
+            }
+            
+            .nav-links.mobile-active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1rem 0;
+            }
+            
+            .nav-links a {
+                font-size: 1.2rem;
+            }
+        }
+`;
+      const style = document.createElement("style");
+      style.textContent = mobileMenuCSS;
+      document.head.appendChild(style);
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("mobile-active");
+        });
+      });
+
+      // Add dynamic year to footer
+      const currentYear = new Date().getFullYear();
+      const footerText = document.querySelector(".footer p");
+      if (footerText) {
+        footerText.innerHTML = footerText.innerHTML.replace(
+          "2024",
+          currentYear
+        );
+      }
+    </script>
+  </body>
+</html>

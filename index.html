@@ -447,6 +447,9 @@
       .service-image {
         height: 200px;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .service-image img {
@@ -456,7 +459,8 @@
         transition: transform var(--transition-slow);
       }
 
-      .service-card:hover .service-image img {
+      .service-card:hover .service-image img,
+      .service-card:hover .service-image i {
         transform: scale(1.1);
       }
 
@@ -874,6 +878,19 @@
         box-shadow: var(--shadow-medium);
       }
 
+      .stats-plus {
+        font-size: 2rem;
+        line-height: 4.5rem;
+        color: var(--accent-gold);
+      }
+
+      .stats-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+
       /* Animations */
       @keyframes fadeInUp {
         from {
@@ -1005,22 +1022,23 @@
         <div class="hero-content">
           <h1 class="hero-title">Elite Deal Closer & Business Architect</h1>
           <p class="hero-subtitle">
-            Transforming ambitious visions into multi-million dollar realities
-            through strategic partnerships and unparalleled network leverage
+            We specialize in closing high-stakes deals and forging strategic
+            partnerships that leverage an unparalleled network to turn ambitious
+            ideas into multi-million dollar realities.
           </p>
 
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-number">20,000+</span>
+              <div class="stats-wrap">
+                <span class="stat-number">2000</span><b class="stats-plus">+</b>
+              </div>
               <span class="stat-label">Strategic Partnerships</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">₹500M+</span>
+              <div class="stats-wrap">
+                <span class="stat-number">50</span><b class="stats-plus">+</b>
+              </div>
               <span class="stat-label">Deals Closed</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">98%</span>
-              <span class="stat-label">Success Rate</span>
             </div>
           </div>
 
@@ -1041,42 +1059,49 @@
     <!-- About Section -->
     <section id="about" class="section about">
       <div class="container">
-        <h2 class="section-title">The Architect of Impossible Deals</h2>
+        <h2 class="section-title">
+          Your Strategic Deal Closer & Growth Partner
+        </h2>
         <p class="section-subtitle">
-          Where vision meets execution, and relationships become revenue streams
+          Forging powerful collaborations between brands, influencers, and
+          experts to drive measurable results.
         </p>
 
         <div class="about-content fade-in-up">
           <div class="about-image">
             <img
               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMUExQTFBIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9IiNENEFGMzciLz4KPHJlY3QgeD0iMTQwIiB5PSIyNDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRDRBRjM3Ii8+CjxyZWN0IHg9IjEwMCIgeT0iMzIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRDRBRjM3Ii8+Cjwvc3ZnPgo="
-              alt="Shivam Pandey - Professional Portrait"
+              alt="Shivam Pandey - Professional Deal Closer"
             />
           </div>
           <div class="about-text">
             <p>
-              With over a decade of experience in high-stakes negotiations and
-              strategic business development, I've built an empire of
-              connections that spans industries, continents, and corporate
-              hierarchies. My approach isn't just about closing deals—it's about
-              architecting ecosystems where every stakeholder wins
-              exponentially.
+              I am a professional Deal Closer & Business Development Partner,
+              specializing in helping brands, startups, and agencies achieve
+              exponential growth. With a track record of
+              <strong>50+ successful deals</strong> and
+              <strong>80% client satisfaction</strong>, I focus on connecting
+              the right people to create powerful, results-driven
+              collaborations.
             </p>
 
             <p>
-              From Fortune 500 boardrooms to celebrity management suites, I've
-              orchestrated partnerships that have redefined industry standards
-              and created unprecedented value streams. My 20,000+ network isn't
-              just a number—it's a carefully curated ecosystem of
-              decision-makers, influencers, and industry titans who trust my
-              judgment and execution.
+              My strength lies in a vast, curated network of
+              <strong
+                >20,000+ influencers, artists, and trusted service
+                providers</strong
+              >
+              across <strong>20+ industries</strong>—including video production,
+              marketing, real estate, fitness, legal, and beauty. This isn't
+              just a contact list; it's an ecosystem I've built to ensure
+              flawless execution from handshake to delivery.
             </p>
 
             <p>
-              Every deal I touch becomes a masterpiece of strategic thinking,
-              relationship leverage, and flawless execution. When others see
-              obstacles, I see opportunities. When others see competition, I see
-              collaboration potential.
+              My expertise is your advantage. I don't just make introductions; I
+              architect partnerships, manage strategy, and provide end-to-end
+              support to ensure every collaboration delivers on its promise and
+              drives tangible growth for your business.
             </p>
           </div>
         </div>
@@ -1086,83 +1111,46 @@
             <div class="value-icon">
               <i class="fas fa-handshake"></i>
             </div>
-            <h3 class="value-title">Unshakeable Trust</h3>
+            <h3 class="value-title">Proven Results</h3>
             <p class="value-desc">
-              Built on transparency, integrity, and consistent delivery that
-              exceeds expectations every single time.
+              A demonstrated history of closing 50+ high-value deals with an 80%
+              client satisfaction rate.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">
               <i class="fas fa-network-wired"></i>
             </div>
-            <h3 class="value-title">Elite Network</h3>
+            <h3 class="value-title">Vast Network</h3>
             <p class="value-desc">
-              Access to 20,000+ high-level contacts across industries, ensuring
-              the right connections at the right time.
+              Direct access to 20,000+ influencers and experts across 20+
+              industries for the perfect connection.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">
               <i class="fas fa-rocket"></i>
             </div>
-            <h3 class="value-title">Flawless Execution</h3>
+            <h3 class="value-title">End-to-End Execution</h3>
             <p class="value-desc">
-              From concept to completion, every project is delivered with
-              precision, speed, and excellence.
+              From initial strategy and sourcing to final delivery and marketing
+              <br />
+              —
+              <br />
+              I manage it all.
             </p>
           </div>
           <div class="value-card">
             <div class="value-icon">
               <i class="fas fa-trophy"></i>
             </div>
-            <h3 class="value-title">Proven Results</h3>
+            <h3 class="value-title">Multi-Industry Expertise</h3>
             <p class="value-desc">
-              98% success rate with deals worth ₹500M+ speaks to the power of
-              strategic relationship building.
+              Deep understanding of diverse sectors, from real estate and
+              fitness to media production and legal.
             </p>
           </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3 class="value-title">Absolute Confidentiality</h3>
-            <p class="value-desc">
-              Complete discretion and privacy protection for all clients and
-              sensitive business matters.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-globe"></i>
-            </div>
-            <h3 class="value-title">Global Reach</h3>
-            <p class="value-desc">
-              Multi-industry expertise spanning technology, entertainment, real
-              estate, and corporate sectors worldwide.
-            </p>
-          </div>
-          <!-- New Items -->
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3 class="value-title">Innovative Strategies</h3>
-            <p class="value-desc">
-              Tailor-made solutions that combine creativity with data-driven
-              insights for maximum impact.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-user-shield"></i>
-            </div>
-            <h3 class="value-title">Client-Centric Approach</h3>
-            <p class="value-desc">
-              Every decision and action is guided by the client's goals,
-              ensuring mutual growth and long-term success.
-            </p>
-          </div>
+          <!-- Removed two generic value cards to fit the new content style -->
         </div>
       </div>
     </section>
@@ -1285,59 +1273,128 @@
       </div>
     </section>
 
-    <!-- Why Choose Me Section -->
-    <section id="why-choose" class="section why-choose">
+    <!-- Services Section -->
+    <section id="services" class="section services">
       <div class="container">
-        <h2 class="section-title">Why Elite Leaders Choose Me</h2>
+        <h2 class="section-title">Comprehensive Service Portfolio</h2>
         <p class="section-subtitle">
-          The competitive advantages that set me apart in the world of
-          high-stakes business
+          End-to-end solutions from a single, trusted partner
         </p>
 
-        <div class="features-grid fade-in-up">
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fas fa-users"></i>
+        <div class="services-grid fade-in-up">
+          <!-- Video Production Service Card -->
+          <div class="service-card">
+            <div class="service-image">
+              <i
+                class="fas fa-video"
+                style="font-size: 6rem; color: #d4af37; margin: 20px"
+              ></i>
             </div>
-            <h3 class="feature-title">Massive Network</h3>
-            <p class="feature-desc">
-              20,000+ high-level contacts across industries, continents, and
-              corporate hierarchies, providing unmatched access to
-              decision-makers and opportunities.
-            </p>
+            <div class="service-content">
+              <h3 class="service-title">🎥 Video Production Services</h3>
+              <ul
+                class="service-desc"
+                style="text-align: left; padding-left: 1rem"
+              >
+                <li>Brand Films & Ad Films</li>
+                <li>Corporate Videos & Product Demos</li>
+                <li>Influencer Reels & Shorts</li>
+                <li>Event Coverage & Music Videos</li>
+                <li>Post-Production: Editing, VFX, Sound</li>
+                <li>
+                  <strong>AI-Powered Innovation:</strong> AI-generated videos,
+                  avatars, voiceovers, and editing.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fas fa-chart-line"></i>
+
+          <!-- Marketing Service Card -->
+          <div class="service-card">
+            <div class="service-image">
+              <i
+                class="fas fa-bullhorn"
+                style="font-size: 6rem; color: #d4af37; margin: 20px"
+              ></i>
             </div>
-            <h3 class="feature-title">Proven Track Record</h3>
-            <p class="feature-desc">
-              98% success rate with deals worth ₹500M+ demonstrates consistent
-              ability to deliver exceptional results in the most challenging
-              scenarios.
-            </p>
+            <div class="service-content">
+              <h3 class="service-title">📢 Marketing & Growth Services</h3>
+              <ul
+                class="service-desc"
+                style="text-align: left; padding-left: 1rem"
+              >
+                <li>Social Media Management</li>
+                <li>Influencer Marketing Campaigns</li>
+                <li>Paid Ads (Google, Meta, LinkedIn)</li>
+                <li>SEO & Email Marketing</li>
+                <li>PR & Media Outreach</li>
+                <li>
+                  <strong>AI-Driven Boost:</strong> Predictive analytics, AI ad
+                  creatives, and influencer discovery.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fas fa-user-secret"></i>
+
+          <!-- Business & Design Service Card -->
+          <div class="service-card">
+            <div class="service-image">
+              <i
+                class="fas fa-paint-brush"
+                style="font-size: 6rem; color: #d4af37; margin: 20px"
+              ></i>
             </div>
-            <h3 class="feature-title">Absolute Confidentiality</h3>
-            <p class="feature-desc">
-              Military-grade discretion and privacy protection for all clients,
-              ensuring sensitive business matters remain completely secure and
-              confidential.
-            </p>
+            <div class="service-content">
+              <h3 class="service-title">🎨 Business & Creative Design</h3>
+              <ul
+                class="service-desc"
+                style="text-align: left; padding-left: 1rem"
+              >
+                <li>Logos & Brand Guidelines</li>
+                <li>Packaging & Label Design</li>
+                <li>Pitch Decks & Corporate Profiles</li>
+                <li>Brochures, Flyers, Posters</li>
+                <li>
+                  <strong>AI Creative Edge:</strong> AI-generated mockups,
+                  infographics, and competitor analysis.
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fas fa-industry"></i>
+
+          <!-- Industry-Specific Service Card -->
+          <div class="service-card">
+            <div class="service-image">
+              <i
+                class="fas fa-industry"
+                style="font-size: 6rem; color: #d4af37; margin: 20px"
+              ></i>
             </div>
-            <h3 class="feature-title">Multi-Industry Expertise</h3>
-            <p class="feature-desc">
-              Deep knowledge spanning technology, entertainment, real estate,
-              healthcare, and corporate sectors, enabling cross-industry
-              innovation and opportunity identification.
-            </p>
+            <div class="service-content">
+              <h3 class="service-title">🏢 Industry-Specific Solutions</h3>
+              <ul
+                class="service-desc"
+                style="text-align: left; padding-left: 1rem"
+              >
+                <li>
+                  <strong>Real Estate:</strong> Buying/Selling, Tours, Marketing
+                </li>
+                <li>
+                  <strong>Fitness:</strong> Trainer sourcing, Supplement supply
+                </li>
+                <li>
+                  <strong>Beauty:</strong> Dermatology, Hair Treatments, Clinics
+                </li>
+                <li>
+                  <strong>Legal/Finance:</strong> Business Registration, ITR
+                  Filing
+                </li>
+                <li>
+                  <strong>More:</strong> Talent Sourcing, Wedding Management,
+                  Garment Supply
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1346,83 +1403,94 @@
     <!-- Clients & Collaborations Section -->
     <section id="clients" class="section clients">
       <div class="container">
-        <h2 class="section-title">Elite Clients & Collaborations</h2>
+        <h2 class="section-title">Notable Collaborations & Clients</h2>
         <p class="section-subtitle">
-          Trusted by industry leaders, celebrities, and Fortune 500 companies
-          worldwide
+          Trusted by leading brands and influential personalities
         </p>
 
         <div class="clients-grid fade-in-up">
+          <!-- Using the actual client names you provided -->
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-building"></i>
+              <i class="fas fa-gem"></i>
+              <!-- Icon for Jewelry -->
             </div>
-            <h4 class="client-name">Tech Unicorn Inc.</h4>
-            <p class="client-note">$50M Series B Partnership</p>
+            <h4 class="client-name">Satashree Jewellery</h4>
           </div>
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-shopping-bag"></i>
+              <!-- Icon for E-commerce -->
             </div>
-            <h4 class="client-name">A-List Celebrity</h4>
-            <p class="client-note">Brand Ambassador Deal</p>
+            <h4 class="client-name">ebay</h4>
           </div>
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-crown"></i>
+              <i class="fas fa-heart"></i>
+              <!-- Icon for Wedding -->
             </div>
-            <h4 class="client-name">Luxury Brand Group</h4>
-            <p class="client-note">Market Expansion Strategy</p>
+            <h4 class="client-name">Shaadi.com</h4>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-leaf"></i>
+              <!-- Icon for Natural Products -->
+            </div>
+            <h4 class="client-name">Plum</h4>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-male"></i>
+              <!-- Icon for Grooming -->
+            </div>
+            <h4 class="client-name">Beardo</h4>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-plus-circle"></i>
+              <!-- Icon for Healthcare -->
+            </div>
+            <h4 class="client-name">Mankind Pharma</h4>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-basketball-ball"></i>
+              <!-- Icon for Sports -->
+            </div>
+            <h4 class="client-name">Sportskeeda</h4>
+          </div>
+          <div class="client-item">
+            <div class="client-logo">
+              <i class="fas fa-dumbbell"></i>
+              <!-- Icon for Fitness -->
+            </div>
+            <h4 class="client-name">Cult.fit</h4>
           </div>
           <div class="client-item">
             <div class="client-logo">
               <i class="fas fa-film"></i>
             </div>
-            <h4 class="client-name">Entertainment Studio</h4>
-            <p class="client-note">Celebrity Casting Network</p>
+            <h4 class="client-name">Bracket Films</h4>
           </div>
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-rocket"></i>
+              <i class="fas fa-theater-masks"></i>
             </div>
-            <h4 class="client-name">Startup Accelerator</h4>
-            <p class="client-note">Investor Relations</p>
+            <h4 class="client-name">Classic Music Theatre</h4>
           </div>
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-globe"></i>
+              <i class="fas fa-home"></i>
             </div>
-            <h4 class="client-name">Global Corp</h4>
-            <p class="client-note">International Expansion</p>
-          </div>
-          <!-- New Items -->
-          <div class="client-item">
-            <div class="client-logo">
-              <i class="fas fa-microphone"></i>
-            </div>
-            <h4 class="client-name">Music Production House</h4>
-            <p class="client-note">World Tour Sponsorship</p>
+            <h4 class="client-name">Sagar Visawadia</h4>
+            <p class="client-note">#1 Real Estate Influencer</p>
           </div>
           <div class="client-item">
             <div class="client-logo">
-              <i class="fas fa-leaf"></i>
+              <i class="fas fa-building"></i>
             </div>
-            <h4 class="client-name">EcoTech Solutions</h4>
-            <p class="client-note">Sustainable Innovation Partnership</p>
-          </div>
-          <div class="client-item">
-            <div class="client-logo">
-              <i class="fas fa-shopping-bag"></i>
-            </div>
-            <h4 class="client-name">Fashion House</h4>
-            <p class="client-note">Runway Collaboration</p>
-          </div>
-          <div class="client-item">
-            <div class="client-logo">
-              <i class="fas fa-gamepad"></i>
-            </div>
-            <h4 class="client-name">Gaming Studio</h4>
-            <p class="client-note">E-Sports Partnership</p>
+            <h4 class="client-name">Dream Properties</h4>
+            <p class="client-note">#1 Real Estate Consultancy</p>
           </div>
         </div>
       </div>
@@ -1431,56 +1499,72 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="section testimonials">
       <div class="container">
-        <h2 class="section-title">What Elite Leaders Say</h2>
+        <h2 class="section-title">What My Collaborators Say</h2>
         <p class="section-subtitle">
-          Testimonials from the industry's most successful professionals
+          Real feedback from successful partnerships
         </p>
 
         <div class="testimonial-slider fade-in-up">
+          <!-- Testimonial 1: Bracket Films -->
           <div class="testimonial-item">
             <p class="testimonial-text">
-              "Shivam doesn't just close deals—he architects business
-              relationships that transform entire industries. His network is
-              unparalleled, and his execution is flawless. The ₹120 crore
-              partnership he secured for us exceeded every expectation."
+              "Excellent in dealing with clients. Professional, responsive, and
+              delivers on promises. A true asset for any business looking to
+              grow through strategic collaborations."
             </p>
             <div class="testimonial-author">
-              <div class="author-image">RS</div>
+              <div class="author-image">BF</div>
               <div class="author-info">
-                <h4>Rajesh Sharma</h4>
-                <p>CEO, TechnovationX</p>
+                <h4>Bracket Films</h4>
+                <p>Production House</p>
               </div>
             </div>
           </div>
 
+          <!-- Testimonial 2: Shivani Joshi -->
           <div class="testimonial-item">
             <p class="testimonial-text">
-              "In a world full of networkers, Shivam is a relationship
-              architect. He connected us with the perfect celebrity endorsement
-              that transformed our brand overnight. The deal generated 300% ROI
-              in the first quarter alone."
+              "Excellent in crew sourcing. Provided reliable, talented
+              professionals quickly and efficiently, making the production
+              process seamless."
             </p>
             <div class="testimonial-author">
-              <div class="author-image">PK</div>
+              <div class="author-image">SJ</div>
               <div class="author-info">
-                <h4>Priya Kapoor</h4>
-                <p>CMO, Luxury Lifestyle Brands</p>
+                <h4>Shivani Joshi</h4>
+                <p>Director</p>
               </div>
             </div>
           </div>
 
+          <!-- Testimonial 3: Rajiv Kapoor -->
           <div class="testimonial-item">
             <p class="testimonial-text">
-              "Shivam's ability to navigate complex multi-party negotiations
-              while maintaining trust and delivering value to everyone involved
-              is extraordinary. He turned our impossible deal into our most
-              successful partnership."
+              "Exceptionally deal handling abilities. Navigates complex
+              negotiations with ease and always finds a win-win solution for all
+              parties involved."
             </p>
             <div class="testimonial-author">
-              <div class="author-image">AM</div>
+              <div class="author-image">RK</div>
               <div class="author-info">
-                <h4>Arjun Malhotra</h4>
-                <p>Chairman, Global Ventures Ltd</p>
+                <h4>Rajiv Kapoor</h4>
+                <p>Classic Theatre Movie Production</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4: Sagar Visawadia -->
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              "Best growth strategist. His insights into market trends and his
+              vast network were instrumental in developing and executing a
+              powerful growth strategy."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">SV</div>
+              <div class="author-info">
+                <h4>Sagar Visawadia</h4>
+                <p>#1 Real Estate Influencer in Asia</p>
               </div>
             </div>
           </div>
@@ -1491,59 +1575,74 @@
     <!-- Case Studies Section -->
     <section id="case-studies" class="section case-studies">
       <div class="container">
-        <h2 class="section-title">Success Stories That Define Excellence</h2>
+        <h2 class="section-title">How Strategic Deals Drive Growth</h2>
         <p class="section-subtitle">
-          Real results, real impact, real transformation
+          Real-world examples of partnerships that unlocked new markets,
+          revenue, and brand potential.
         </p>
 
         <div class="case-studies-grid fade-in-up">
           <div class="case-study-card">
             <div class="case-study-image">
-              <i class="fas fa-rocket"></i>
+              <i class="fas fa-video"></i>
+              <!-- Icon for Video -->
             </div>
             <div class="case-study-content">
-              <h3 class="case-study-title">The ₹200 Crore Tech Merger</h3>
+              <h3 class="case-study-title">
+                AI Video Campaign for E-Commerce Brand
+              </h3>
               <p class="case-study-desc">
-                Orchestrated the largest tech acquisition in Southeast Asia by
-                connecting two industry giants, creating unprecedented market
-                synergies and shareholder value.
+                Closed a deal between a beauty brand and a top AI video
+                production house. The result: 50+ hyper-personalized ad variants
+                generated in days (not months), leading to a
+                <strong>35% higher conversion rate</strong> and a 3x ROI on ad
+                spend.
               </p>
               <a href="#" class="read-more">
-                Read Full Story <i class="fas fa-arrow-right"></i>
+                See How It Worked <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <div class="case-study-card">
             <div class="case-study-image">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-home"></i>
+              <!-- Icon for Real Estate -->
             </div>
             <div class="case-study-content">
-              <h3 class="case-study-title">Celebrity Brand Empire</h3>
+              <h3 class="case-study-title">
+                Influencer Partnership for Luxury Development
+              </h3>
               <p class="case-study-desc">
-                Built a multi-brand partnership network for a Bollywood
-                A-lister, generating ₹85 crores in brand deals and establishing
-                a sustainable revenue ecosystem.
+                Structured a collaboration between a real estate developer and
+                the #1 real estate influencer in Asia. The campaign, featuring
+                exclusive video tours, generated over
+                <strong>500 qualified leads</strong> and secured 12 premium unit
+                bookings within the first month.
               </p>
               <a href="#" class="read-more">
-                Read Full Story <i class="fas fa-arrow-right"></i>
+                See How It Worked <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <div class="case-study-card">
             <div class="case-study-image">
-              <i class="fas fa-globe"></i>
+              <i class="fas fa-shopping-cart"></i>
+              <!-- Icon for E-comm -->
             </div>
             <div class="case-study-content">
-              <h3 class="case-study-title">Global Market Breakthrough</h3>
+              <h3 class="case-study-title">
+                360° Marketing Deal for D2C Fitness Brand
+              </h3>
               <p class="case-study-desc">
-                Facilitated a startup's expansion into 12 international markets
-                through strategic partnerships, achieving 400% revenue growth in
-                18 months.
+                Brokered a full-service partnership for a supplement brand,
+                connecting them with video production, performance marketing
+                experts, and fitness influencers. This integrated approach
+                achieved <strong>400% revenue growth</strong> in one quarter.
               </p>
               <a href="#" class="read-more">
-                Read Full Story <i class="fas fa-arrow-right"></i>
+                See How It Worked <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -1554,56 +1653,92 @@
     <!-- Blog Section -->
     <section id="blog" class="section blog">
       <div class="container">
-        <h2 class="section-title">
-          Strategic Insights & Industry Intelligence
-        </h2>
+        <h2 class="section-title">Resources on Strategic Partnerships</h2>
         <p class="section-subtitle">
-          Cutting-edge strategies and market insights from the frontlines of
-          elite deal-making
+          Actionable insights on closing deals that accelerate business growth.
         </p>
 
         <div class="blog-grid fade-in-up">
           <div class="blog-card">
             <div class="blog-image">
-              <i class="fas fa-brain"></i>
+              <i class="fas fa-handshake"></i>
+              <!-- Icon for Negotiation -->
             </div>
             <div class="blog-content">
               <h3 class="blog-title">
-                The Psychology of High-Stakes Negotiations
+                5 Negotiation Tactics That Seal High-Value Deals
               </h3>
               <p class="blog-excerpt">
-                Understanding the mental frameworks and psychological triggers
-                that drive successful deal-making in high-pressure environments.
+                Move beyond price haggling. Learn the frameworks used by top
+                closers to create win-win agreements that partners are excited
+                to sign.
+              </p>
+              <!-- Added a relevant external link for credibility -->
+              <p>
+                <small
+                  ><a
+                    href="https://www.pon.harvard.edu/category/daily/negotiation-skills-daily/"
+                    target="_blank"
+                    style="color: #d4af37"
+                    >Read more on negotiation skills →</a
+                  ></small
+                >
               </p>
             </div>
           </div>
 
           <div class="blog-card">
             <div class="blog-image">
-              <i class="fas fa-network-wired"></i>
+              <i class="fas fa-search-dollar"></i>
+              <!-- Icon for ROI -->
             </div>
             <div class="blog-content">
               <h3 class="blog-title">
-                Building Networks That Generate Revenue
+                How to Calculate the True ROI of a Partnership
               </h3>
               <p class="blog-excerpt">
-                The systematic approach to relationship building that transforms
-                connections into consistent revenue streams and business
-                opportunities.
+                It's more than just revenue. Learn the metrics that matter—brand
+                lift, market access, and strategic value—to evaluate any
+                collaboration.
+              </p>
+              <!-- Added a relevant external link for credibility -->
+              <p>
+                <small
+                  ><a
+                    href="https://hbr.org/2021/01/how-to-measure-strategic-success"
+                    target="_blank"
+                    style="color: #d4af37"
+                    >HBR on measuring success →</a
+                  ></small
+                >
               </p>
             </div>
           </div>
 
           <div class="blog-card">
             <div class="blog-image">
-              <i class="fas fa-chart-line"></i>
+              <i class="fas fa-robot"></i>
+              <!-- Icon for AI -->
             </div>
             <div class="blog-content">
-              <h3 class="blog-title">Market Trends Shaping 2024-2025</h3>
+              <h3 class="blog-title">
+                Why AI is Your Newest Deal-Making Partner
+              </h3>
               <p class="blog-excerpt">
-                Strategic insights into emerging market opportunities and
-                industry shifts that will define the next wave of business
-                success.
+                From analyzing market fit to personalizing outreach at scale,
+                discover how AI tools are revolutionizing business development
+                and closing deals faster.
+              </p>
+              <!-- Added a relevant external link for credibility -->
+              <p>
+                <small
+                  ><a
+                    href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2023-generative-ais-breakout-year"
+                    target="_blank"
+                    style="color: #d4af37"
+                    >McKinsey on AI in 2023 →</a
+                  ></small
+                >
               </p>
             </div>
           </div>
@@ -1614,14 +1749,14 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
       <div class="container">
-        <h2 class="section-title">Let's Architect Your Next Big Win</h2>
+        <h2 class="section-title">Let's Build Your Next Growth Chapter</h2>
         <p class="section-subtitle">
-          Ready to transform your vision into a multi-million dollar reality?
+          Ready to forge powerful collaborations and close your next big deal?
         </p>
 
         <div class="contact-content fade-in-up">
           <div class="contact-info">
-            <h3>Connect With Excellence</h3>
+            <h3>Get In Touch</h3>
             <div class="contact-info">
               <!-- Availability -->
               <div class="contact-item">
@@ -1630,7 +1765,7 @@
                 </div>
                 <div>
                   <p><strong>Availability:</strong></p>
-                  <p>24/7 for Elite Clients</p>
+                  <p>Contact for Consultation</p>
                 </div>
               </div>
 
@@ -1641,7 +1776,7 @@
                 </div>
                 <div>
                   <p><strong>Direct Line:</strong></p>
-                  <p>+91 98765 43210</p>
+                  <p>+91 88617 57499</p>
                 </div>
               </div>
 
@@ -1651,23 +1786,23 @@
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div>
-                  <p><strong>Executive Email:</strong></p>
-                  <p>shivam@elitedeals.com</p>
+                  <p><strong>Email:</strong></p>
+                  <p>shivambrandboost@gmail.com</p>
                 </div>
               </div>
 
-              <!-- Global Headquarters -->
+              <!-- Location -->
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div>
-                  <p><strong>Global Headquarters:</strong></p>
-                  <p>Mumbai, Maharashtra, India</p>
+                  <p><strong>Location:</strong></p>
+                  <p>Mumbai, India</p>
                 </div>
               </div>
 
-              <!-- Optional: LinkedIn / Social -->
+              <!-- LinkedIn / Social -->
               <div class="contact-item">
                 <div class="contact-icon">
                   <i class="fab fa-linkedin"></i>
@@ -1679,34 +1814,38 @@
                       class="c-links"
                       href="https://linkedin.com/in/shivampandey"
                       target="_blank"
-                      >linkedin.com/in/shivampandey</a
                     >
+                      Connect on LinkedIn
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
+            <p style="margin-top: 20px; font-style: italic; color: #aaa">
+              I typically respond to serious inquiries within a few hours.
+            </p>
           </div>
 
           <div class="contact-form">
             <form id="contactForm">
               <div class="form-group">
-                <label for="name">Full Name *</label>
+                <label for="name">Your Name *</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   required
-                  placeholder="Your full name"
+                  placeholder="e.g., Rajesh Sharma"
                 />
               </div>
               <div class="form-group">
-                <label for="email">Email Address *</label>
+                <label for="email">Business Email *</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  placeholder="your.email@company.com"
+                  placeholder="you@yourcompany.com"
                 />
               </div>
               <div class="form-group">
@@ -1715,30 +1854,30 @@
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 00000 00000"
                 />
               </div>
               <div class="form-group">
-                <label for="company">Company/Organization</label>
+                <label for="company">Company / Brand</label>
                 <input
                   type="text"
                   id="company"
                   name="company"
-                  placeholder="Your company name"
+                  placeholder="Your company or brand name"
                 />
               </div>
               <div class="form-group">
-                <label for="project">Project Brief *</label>
+                <label for="project">Collaboration Goals *</label>
                 <textarea
                   id="project"
                   name="project"
                   required
-                  placeholder="Describe your project, deal objectives, timeline, and expected outcomes..."
+                  placeholder="Briefly describe your industry, what you're looking to achieve, and the type of partnership or service you need (e.g., influencer campaign, video production, strategic deal)..."
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">
-                <i class="fas fa-rocket"></i>
-                Schedule Elite Consultation
+                <i class="fas fa-paper-plane"></i>
+                Discuss a Partnership
               </button>
             </form>
           </div>
@@ -1768,8 +1907,9 @@
           Business Architecture.
         </p>
         <p>
-          Transforming visions into multi-million dollar realities through
-          strategic partnerships and unparalleled network leverage.
+          We specialize in closing high-stakes deals and forging strategic
+          partnerships that leverage an unparalleled network to turn ambitious
+          ideas into multi-million dollar realities.
         </p>
       </div>
     </footer>
